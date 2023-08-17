@@ -1,11 +1,15 @@
-export default function About() {
+import React from "react";
+
+function About() {
     return (
-      <div>
-        <h1>About Page</h1>
+      <section class="about-me">
+        <h1 id="about-me">About Me Page</h1>
         <p>
           About Me is about me.
         </p>
-      </div>
+      </section>
     );
   }
+
+  export default About;
   
