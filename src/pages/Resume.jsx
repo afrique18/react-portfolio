@@ -1,11 +1,11 @@
-export default function Resume() {
-    return (
-      <div>
-        <h1>Resume Page</h1>
-        <p>
-          Resume here.
-        </p>
-      </div>
-    );
-  }
-  
+import React from "react";
+
+function Resume() {
+  return (
+    <section>
+      <h1>Downloadable Resume</h1>
+    </section>
+  );
+}
+
+export default Resume;
