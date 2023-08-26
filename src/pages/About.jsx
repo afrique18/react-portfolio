@@ -2,12 +2,13 @@ import React from "react";
 
 function About() {
     return (
-      <section class="about-me">
-        <h1 id="about-me">About Me Page</h1>
+      <div>
+        <h2>About Me</h2>
+        <img src="my-photo.jpg" alt="Hero" /> 
         <p>
           About Me is about me.
         </p>
-      </section>
+      </div>
     );
   }
 
