@@ -1,32 +1,39 @@
 
 import React, {Component} from 'react';
-import { HashRouter, Route } from 'react-router-dom';
+// import { HashRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import Header from './components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Footer from '/components/Footer';
+// import Footer from './components/Footer';
 import Portfolio from './pages/Portfolio';
 
-Class App extends Component {
-  render() {
+// Class App extends Component {
+//   render() {
+
+function App() {
     return (
-      <HashRouter basename='/'>
+      <>
+      <BrowserRouter>
+      <Routes>
         <div className='app'>
-          <header/>
+          {/* <Header /> */}
           <main>
             <Route exact path='/' Component={Home} />
             <Route exact path='/about' Component={About} />
             <Route exact path='/contact' Component={Contact} />
             <Route exact path='/portfolio' Component={Portfolio} />
             </main>
-            <Footer />
+            {/* <Footer /> */}
         </div>
-      </HashRouter>
+      </Routes>
+    </BrowserRouter>
+      </> 
     );
-  }
+//   }
 }
 // // Bringing in the required import from 'react-router-dom'
 // import { Outlet } from 'react-router-dom';

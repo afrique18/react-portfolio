@@ -8,9 +8,9 @@ function Home() {
       <div className="title">
         <h2>Hi, I am Varney</h2>
         <p>Welcome to my Portfolio!</p>
-        <Link to="portfolio">
+        {/* <Link to="portfolio">
           <button>View my Projects</button>
-        </Link>
+        </Link> */}
       </div>
       <div className="portrait">
         <img src="{Portrait" alt="self portrait" />
