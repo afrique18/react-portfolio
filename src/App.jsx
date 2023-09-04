@@ -1,9 +1,5 @@
 
 import React, {useState} from 'react';
-// import { HashRouter, Route } from 'react-router-dom';
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import './App.css';
-
 import Header from './components/Header';
 // import Home from './pages/Home';
 import About from './pages/About';
@@ -12,11 +8,8 @@ import Footer from './components/Footer';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
-// Class App extends Component {
-//   render() {
-
 function App() {
-  const [ currentPage, setCurrentPage] = useState(About);
+  const [ currentPage, setCurrentPage] = useState('About');
   const renderPage = () => {
     switch (currentPage) {
       case 'Portfolio':
@@ -36,6 +29,9 @@ function App() {
         <Footer />
       </div>
     );
+  }
+
+  export default App;
 
 
 
@@ -77,6 +73,4 @@ function App() {
 //   );
 // }
 
-}
 
-export default App;
