@@ -14,7 +14,7 @@ function Contact() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleInputSubmit = (e) => {
+  const handleFormSubmit = (e) => {
     e.preventdefault();
     if (!name || !email || !message) {
       alert('All fields are required');
